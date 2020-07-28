@@ -58,6 +58,31 @@ def index(request):
     template_name = "business_side/index.html"
 
     return render(request, template_name)
+
+def about_us(request):
+    template_name = "business_side/about_us.html"
+
+    return render(request, template_name)
+
+def projects(request):
+    template_name = "business_side/projects.html"
+
+    return render(request, template_name)
+
+def blogs(request):
+    template_name = "business_side/blogs.html"
+
+    return render(request, template_name)
+
+def testimony(request):
+    template_name = "business_side/testimony.html"
+
+    return render(request, template_name)
+
+def contact(request):
+    template_name = "business_side/contact.html"
+
+    return render(request, template_name)
 # ==============================================================
 # BUSINESS SIDE END
 # ==============================================================
