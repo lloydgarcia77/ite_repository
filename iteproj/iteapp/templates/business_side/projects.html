@@ -1,0 +1,99 @@
+{% extends 'business_side/index.html' %}
+{% load staticfiles %}
+{% load humanize %}
+{% block title %}
+KGS-BVDR &mdash; Projects
+{% endblock title%}
+
+{% block home %}
+<li class="nav-item">
+  <a class="nav-link " href="{% url 'index' %}">Home</a>
+</li>
+{% endblock home %}
+
+{% block projects %}
+
+<li class="nav-item">
+<a class="nav-link active" href="projects.html">Projects</a>
+</li>
+{% endblock projects %}
+
+{% block index_body %}
+<section class="home-slider inner-page owl-carousel">
+    <div class="slider-item" style="background-image: url({% static 'images/slider-1.jpg' %});">
+      
+      <div class="container">
+        <div class="row slider-text align-items-center justify-content-center">
+          <div class="col-md-8 text-center col-sm-12 element-animate">
+            <h1>Projects</h1>
+            <p class="mb-5 sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END slider -->
+
+
+
+  <section class="section border-t pb-0">
+    <div class="container">
+      <div class="row justify-content-center mb-5 element-animate">
+        <div class="col-md-8 text-center">
+          <h2 class=" heading mb-4">Check Our Awesome Projects</h2>
+          <p class="mb-5 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col-md-4 element-animate">
+          <a href="project-single.html" class="link-thumbnail">
+            <h3>Project Name 1</h3>
+            <span class="ion-plus icon"></span>
+            <img src="{% static 'images/img_1.jpg' %}" alt="Image" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 element-animate">
+          <a href="project-single.html" class="link-thumbnail">
+            <h3>Project Name 2</h3>
+            <span class="ion-plus icon"></span>
+            <img src="{% static 'images/img_2.jpg' %}" alt="Image" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 element-animate">
+          <a href="project-single.html" class="link-thumbnail">
+            <h3>Project Name 3</h3>
+            <span class="ion-plus icon"></span>
+            <img src="{% static 'images/img_3.jpg' %}" alt="Image" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 element-animate">
+          <a href="project-single.html" class="link-thumbnail">
+            <h3>Project Name 4</h3>
+            <span class="ion-plus icon"></span>
+            <img src="{% static 'images/img_4.jpg' %}" alt="Image" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 element-animate">
+          <a href="project-single.html" class="link-thumbnail">
+            <h3>Project Name 5</h3>
+            <span class="ion-plus icon"></span>
+            <img src="{% static 'images/img_5.jpg' %}" alt="Image" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 element-animate">
+          <a href="project-single.html" class="link-thumbnail">
+            <h3>Project Name 6</h3>
+            <span class="ion-plus icon"></span>
+            <img src="{% static 'images/img_6.jpg' %}" alt="Image" class="img-fluid">
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  <!-- END section -->
+{% endblock index_body %}
+
