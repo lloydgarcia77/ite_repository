@@ -47,7 +47,7 @@ KGS-BVDR  &mdash; Information Technology & Electro Mechanical Services Incorpora
             <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Services</a>
             <div class="dropdown-menu" aria-labelledby="dropdown04">
-              <a class="dropdown-item" href="services.html">Electrical System</a>
+              <a class="dropdown-item" href="{% url 'business-side:services_electrical_system' %}">Electrical System</a>
               <a class="dropdown-item" href="services.html">Solar Power System</a>
               <a class="dropdown-item" href="services.html">Inverter and Non-inverter Air-conditioning System</a>
               <a class="dropdown-item" href="services.html">Automatic Fire Supression System</a>
@@ -70,7 +70,7 @@ KGS-BVDR  &mdash; Information Technology & Electro Mechanical Services Incorpora
           
           {% block testimony %}
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'business-side:testimony' %}">Testimony</a>
+            <a class="nav-link" href="{% url 'business-side:testimony' %}">Testimonial</a>
           </li>
             
           {% endblock testimony %}
@@ -102,8 +102,7 @@ KGS-BVDR  &mdash; Information Technology & Electro Mechanical Services Incorpora
       <div class="row slider-text align-items-center justify-content-center">
         <div class="col-md-10 text-center col-sm-12 element-animate">
           <h1>INFORMATION TECHNOLOGY</h1>
-          <p class="mb-5 sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit,
-            necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+          <p class="mb-5 sub-text">Inspiring Tech Needs for Business.</p>
           <p><a href="#" class="btn btn-white btn-outline-white px-3 py-3">Get Started</a> <a href="#"
               class="btn btn-link btn-white">Download</a></p>
         </div>
@@ -112,11 +111,11 @@ KGS-BVDR  &mdash; Information Technology & Electro Mechanical Services Incorpora
 
   </div>
 
-  <div class="slider-item" style="background-image: url({% static 'images/slider-2.jpg' %});">
+  <div class="slider-item" style="background-image: url({% static 'images/elec-slider1.jpg' %});">
     <div class="container">
       <div class="row slider-text align-items-center justify-content-center">
         <div class="col-md-10 text-center col-sm-12 element-animate">
-          <h1>Modern Design</h1>
+          <h1>ELECTRICAL SYSTEM</h1>
           <p class="mb-5 sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit,
             necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
           <p><a href="#" class="btn btn-white btn-outline-white px-3 py-3">Get Started</a> <a href="#"
@@ -127,11 +126,11 @@ KGS-BVDR  &mdash; Information Technology & Electro Mechanical Services Incorpora
 
   </div>
 
-  <div class="slider-item" style="background-image: url({% static 'images/slider-2.jpg' %});">
+  <div class="slider-item" style="background-image: url({% static 'images/sp-slider1.jpg' %});">
     <div class="container">
       <div class="row slider-text align-items-center justify-content-center">
         <div class="col-md-10 text-center col-sm-12 element-animate">
-          <h1>Modern Design</h1>
+          <h1>Solar Power System</h1>
           <p class="mb-5 sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit,
             necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
           <p><a href="#" class="btn btn-white btn-outline-white px-3 py-3">Get Started</a> <a href="#"
@@ -142,7 +141,98 @@ KGS-BVDR  &mdash; Information Technology & Electro Mechanical Services Incorpora
 
   </div>
 
-</section>
+  <div class="slider-item" style="background-image: url({% static 'images/ac-slider1.jpg' %});">
+    <div class="container">
+      <div class="row slider-text align-items-center justify-content-center">
+        <div class="col-md-10 text-center col-sm-12 element-animate">
+          <h1>Inverter and Non-inverter Air-conditioning System</h1>
+          <p class="mb-5 sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit,
+            necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+          <p><a href="#" class="btn btn-white btn-outline-white px-3 py-3">Get Started</a> <a href="#"
+              class="btn btn-link btn-white">Download</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="slider-item" style="background-image: url({% static 'images/fss-slider1.jpg' %});">
+    <div class="container">
+      <div class="row slider-text align-items-center justify-content-center">
+        <div class="col-md-10 text-center col-sm-12 element-animate">
+          <h1>Automatic Fire Supression System</h1>
+          <p class="mb-5 sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit,
+            necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+          <p><a href="#" class="btn btn-white btn-outline-white px-3 py-3">Get Started</a> <a href="#"
+              class="btn btn-link btn-white">Download</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="slider-item" style="background-image: url({% static 'images/fas-slider1.jpg' %});">
+    <div class="container">
+      <div class="row slider-text align-items-center justify-content-center">
+        <div class="col-md-10 text-center col-sm-12 element-animate">
+          <h1>Fire Detection and Alarm System</h1>
+          <p class="mb-5 sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit,
+            necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+          <p><a href="#" class="btn btn-white btn-outline-white px-3 py-3">Get Started</a> <a href="#"
+              class="btn btn-link btn-white">Download</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="slider-item" style="background-image: url({% static 'images/sc-slider1.jpg' %});">
+    <div class="container">
+      <div class="row slider-text align-items-center justify-content-center">
+        <div class="col-md-10 text-center col-sm-12 element-animate">
+          <h1>Structured Cabling for Network and Telephone System</h1>
+          <p class="mb-5 sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit,
+            necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+          <p><a href="#" class="btn btn-white btn-outline-white px-3 py-3">Get Started</a> <a href="#"
+              class="btn btn-link btn-white">Download</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="slider-item" style="background-image: url({% static 'images/cctv-slider1.jpg' %});">
+    <div class="container">
+      <div class="row slider-text align-items-center justify-content-center">
+        <div class="col-md-10 text-center col-sm-12 element-animate">
+          <h1>CCTV System</h1>
+          <p class="mb-5 sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit,
+            necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+          <p><a href="#" class="btn btn-white btn-outline-white px-3 py-3">Get Started</a> <a href="#"
+              class="btn btn-link btn-white">Download</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="slider-item" style="background-image: url({% static 'images/cs-slider1.jpg' %});">
+    <div class="container">
+      <div class="row slider-text align-items-center justify-content-center">
+        <div class="col-md-10 text-center col-sm-12 element-animate">
+          <h1>Customized System</h1>
+          <p class="mb-5 sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit,
+            necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+          <p><a href="#" class="btn btn-white btn-outline-white px-3 py-3">Get Started</a> <a href="#"
+              class="btn btn-link btn-white">Download</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</section>  
 <!-- END slider -->
 
 
@@ -380,8 +470,7 @@ KGS-BVDR  &mdash; Information Technology & Electro Mechanical Services Incorpora
       </div>
 
     </div>
-  </div>
-  </div>
+  </div> 
   <!-- END .block-4 -->
 </section>
 

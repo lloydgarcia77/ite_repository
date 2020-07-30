@@ -83,6 +83,13 @@ def contact(request):
     template_name = "business_side/contact.html"
 
     return render(request, template_name)
+
+
+def services_electrical_system(request):
+    template_name = "business_side/services/electrical_system.html"
+
+    
+    return render(request, template_name)
 # ==============================================================
 # BUSINESS SIDE END
 # ==============================================================
