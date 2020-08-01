@@ -88,6 +88,14 @@ def contact(request):
 def services_electrical_system(request):
     template_name = "business_side/services/electrical_system.html"
 
+
+    return render(request, template_name)
+
+
+
+def services_solar_power_system(request):
+    template_name = "business_side/services/solar_power_system.html"
+
     
     return render(request, template_name)
 # ==============================================================
