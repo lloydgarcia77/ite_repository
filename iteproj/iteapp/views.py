@@ -90,14 +90,26 @@ def services_electrical_system(request):
 
 
     return render(request, template_name)
-
-
-
+ 
 def services_solar_power_system(request):
     template_name = "business_side/services/solar_power_system.html"
 
     
     return render(request, template_name)
+
+
+def services_airconditioning_system(request):
+    template_name = "business_side/services/airconditioning_system.html"
+
+    
+    return render(request, template_name)
+
+def services_automatic_fire_supression_system(request):
+    template_name = "business_side/services/automatic_fire_supression_system.html"
+
+    
+    return render(request, template_name)
+
 # ==============================================================
 # BUSINESS SIDE END
 # ==============================================================

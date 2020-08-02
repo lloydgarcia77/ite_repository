@@ -42,15 +42,18 @@ KGS-BVDR  &mdash; Information Technology & Electro Mechanical Services Incorpora
           {% endblock projects %}
 
           
+          
+          <li class="nav-item dropdown
           {% block services %}
-          <li class="nav-item dropdown">
+          {% endblock services %}
+          ">
             <a class="nav-link dropdown-toggle" href="services.html" id="dropdown04" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Services</a>
             <div class="dropdown-menu" aria-labelledby="dropdown04">
               <a class="dropdown-item" href="{% url 'business-side:services_electrical_system' %}">Electrical System</a>
               <a class="dropdown-item" href="{% url 'business-side:services_solar_power_system' %}">Solar Power System</a>
-              <a class="dropdown-item" href="services.html">Inverter and Non-inverter Air-conditioning System</a>
-              <a class="dropdown-item" href="services.html">Automatic Fire Supression System</a>
+              <a class="dropdown-item" href="{% url 'business-side:services_airconditioning_system' %}">Inverter and Non-inverter Air-conditioning System</a>
+              <a class="dropdown-item" href="{% url 'business-side:services_automatic_fire_supression_system' %}">Automatic Fire Supression System</a>
               <a class="dropdown-item" href="services.html">Fire Detection and Alarm System</a>
               <a class="dropdown-item" href="services.html">Structured Cabling for Network and Telephone System</a>
               <a class="dropdown-item" href="services.html">CCTV System</a>
@@ -58,7 +61,7 @@ KGS-BVDR  &mdash; Information Technology & Electro Mechanical Services Incorpora
               <a class="dropdown-item" href="services.html">Customized Software System</a>
             </div>
           </li>
-          {% endblock services %}
+          
 
           
           {% block blog %}
