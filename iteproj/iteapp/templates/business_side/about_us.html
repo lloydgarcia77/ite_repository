@@ -4,7 +4,16 @@
 {% block title %}
 KGS-BVDR &mdash; About Us
 {% endblock title%}
-
+{% block custom_css %}
+<style>
+h1 {
+    margin-top: 15%;
+}
+.slider-item { 
+    min-height: 650px !important;
+}
+</style>
+{% endblock custom_css %}
 {% block home %}
 <li class="nav-item">
   <a class="nav-link " href="{% url 'index' %}">Home</a>

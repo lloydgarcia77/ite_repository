@@ -110,6 +110,20 @@ def services_automatic_fire_supression_system(request):
     
     return render(request, template_name)
 
+def services_fire_detection_and_alarm_system(request):
+    template_name = "business_side/services/fire_detection_and_alarm_system.html"
+
+    
+    return render(request, template_name)
+    
+def services_structured_cabling_for_network_and_telephone_system(request):
+    template_name = "business_side/services/structured_cabling_for_network_and_telephone_system.html"
+
+    
+    return render(request, template_name)
+
+    
+
 # ==============================================================
 # BUSINESS SIDE END
 # ==============================================================
