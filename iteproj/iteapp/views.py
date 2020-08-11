@@ -122,6 +122,10 @@ def services_structured_cabling_for_network_and_telephone_system(request):
     
     return render(request, template_name)
 
+def services_cctv_system(request):
+    template_name = "business_side/services/cctv_system.html" 
+    return render(request, template_name)
+
     
 
 # ==============================================================
