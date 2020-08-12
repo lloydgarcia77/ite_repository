@@ -57,7 +57,7 @@ KGS-BVDR  &mdash; Information Technology & Electro Mechanical Services Incorpora
               <a class="dropdown-item" href="{% url 'business-side:services_fire_detection_and_alarm_system' %}">Fire Detection and Alarm System</a>
               <a class="dropdown-item" href="{% url 'business-side:services_structured_cabling_for_network_and_telephone_system' %}">Structured Cabling for Network and Telephone System</a>
               <a class="dropdown-item" href="{% url 'business-side:services_cctv_system' %}">CCTV System</a>
-              <a class="dropdown-item" href="services.html">Food Safety, Health Hygiene and Quality Assurance</a>
+              <a class="dropdown-item" href="{% url 'business-side:services_fshhqa' %}">Food Safety, Health Hygiene and Quality Assurance</a>
               <a class="dropdown-item" href="services.html">Customized Software System</a>
             </div>
           </li>
@@ -215,9 +215,23 @@ KGS-BVDR  &mdash; Information Technology & Electro Mechanical Services Incorpora
               class="btn btn-link btn-white">Download</a></p>
         </div>
       </div>
-    </div>
-
+    </div> 
   </div>
+
+  <div class="slider-item" style="background-image: url({% static 'images/fs-slider1.jpg' %});">
+    <div class="container">
+      <div class="row slider-text align-items-center justify-content-center">
+        <div class="col-md-10 text-center col-sm-12 element-animate">
+          <h1>Food Safety, Health Hygiene and Quality Assurance</h1>
+          <p class="mb-5 sub-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit,
+            necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+          <p><a href="#" class="btn btn-white btn-outline-white px-3 py-3">Get Started</a> <a href="#"
+              class="btn btn-link btn-white">Download</a></p>
+        </div>
+      </div>
+    </div> 
+  </div>
+
 
   <div class="slider-item" style="background-image: url({% static 'images/cs-slider1.jpg' %});">
     <div class="container">

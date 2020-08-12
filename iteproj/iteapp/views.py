@@ -126,6 +126,12 @@ def services_cctv_system(request):
     template_name = "business_side/services/cctv_system.html" 
     return render(request, template_name)
 
+def services_fshhqa(request):
+    template_name = "business_side/services/fshhqa.html" 
+    return render(request, template_name)
+
+
+
     
 
 # ==============================================================
