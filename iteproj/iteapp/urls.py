@@ -17,5 +17,7 @@ urlpatterns = [
     path('services/cctv-system', views.services_cctv_system, name="services_cctv_system"),
     path('services/food-safety-health-hygiene-quality-assurance', views.services_fshhqa, name="services_fshhqa"),
     path('services/food-safety-health-hygiene-quality-assurance/haccp-consultancy', views.services_haccp, name="services_haccp"),
-    
+    path('services/food-safety-health-hygiene-quality-assurance/ISO-22000-food-safety-management-system-consultancy', views.services_iso22000, name="services_iso22000"),
+    path('services/food-safety-health-hygiene-quality-assurance/ISO-9001-quality-management-system-consultancy', views.services_iso9001, name="services_iso9001"),
+    path('services/food-safety-health-hygiene-quality-assurance/haccp-trainings', views.services_haccp_trainings, name="services_haccp_trainings"),
 ]

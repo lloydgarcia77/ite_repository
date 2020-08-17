@@ -1,0 +1,131 @@
+{% extends 'business_side/index.html' %}
+{% load staticfiles %}
+{% load humanize %}
+{% block title %}
+KGS-BVDR &mdash; HACCP Tranings
+{% endblock title%}
+
+
+{% block home %}
+<li class="nav-item">
+    <a class="nav-link " href="{% url 'index' %}">Home</a>
+</li>
+{% endblock home %}
+
+
+{% block services %}
+active
+{% endblock services %}
+
+
+{% block index_body %}
+
+<section class="home-slider inner-page owl-carousel">
+    <div class="slider-item" style="background-image: url({% static 'images/haccp_training_wallpaper.jpg' %});">
+
+        <div class="container">
+            <div class="row slider-text align-items-center justify-content-center">
+                <div class="col-md-8 text-center col-sm-12 element-animate">
+                    <h1>HACCP Trainings</h1>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 mb-5">
+                <p><img src="{% static 'images/haccp_defenition.jpg' %}" alt="Image" class="img-fluid"></p>
+                <p>A HACCP System requires that potential hazards are identified and controlled at specific points in
+                    the process. This includes biological, chemical or physical hazards. Any organization involved in
+                    the manufacturing, processing or handling of food products can use HACCP to minimize or eliminate
+                    food safety hazards.</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 mb-5">
+                <p><img src="{% static 'images/haccp_training.jpg' %}" alt="Image" class="img-fluid"></p>
+                <h2>Training Lists:</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                
+                <ol>
+                    <li>
+                        <p><b>Good Manufacturing Practice (GMP) Training:</b></p>
+                    </li>
+                    <p>This training course is suitable for employees at all levels within a food business. This aims to provide understanding on GMP requirements, the importance of complying with GMP to achieve work efficiency and effectiveness in food business.  </p>
+                    <li>
+                        <p><b>HACCP Level 1 Training Course:</b></p>
+                    </li>
+                    <p>This is a HACCP awareness training course. This training course aims to provide understanding on the basic of HACCP and how important it is to the production of quality and safe food and beverage products.</p>
+                    <li>
+                        <p><b>HACCP Level 2 Training Course:</b></p>
+                    </li>
+                    <p>This is level 2 HACCP training course is suitable for employees at all levels within a food business. This aims to provide comprehensive introduction to HACCP and teaches learners about what they can do to help their business implement the system and comply with local and international food safety laws and regulations.</p>
+                    <li>
+                        <p><b>ISO 22000:2018 Foundation Course:</b></p>
+                    </li>
+                    <p>This is an introductory course for ISO standard more specifically for ISO 22000:20018. This aims to provide understanding on the application, implementation of  ISO 22000:2018 standard and the purpose of a food safety management system.</p>
+                    <li>
+                        <p><b>ISO 22000:2018 Documentation Course:</b></p>
+                    </li>
+                    <p>This training course aims to provide in depth discussion on the requirements that needs to be documented especially the four levels of documentation, food safety management system manual (with policies), procedures, work instruction, maintained and retained documented information. </p>
+                    <li>
+                        <p><b>ISO 22000:2018 Internal Audit Course:</b></p>
+                    </li>
+                    <p>This training course is suitable for employees who have undergone foundation and documentation course for ISO 22000:2018 standard. This will provide understanding on audit principles, knowledge and skills to perform internal audit based on the requirement of ISO 22000:2018 standard.</p>
+                </ol>
+
+
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section border-t pb-0" id="fshhqa">
+    <div class="container">
+      <div class="row justify-content-center mb-5 element-animate">
+        <div class="col-md-8 text-center">
+          <h2 class=" heading mb-4">Check Our Awesome Services</h2>
+          <p class="mb-5 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" style="margin-bottom: 5%;">
+      <div class="row no-gutters">
+        <div class="col-md-4 element-animate">
+          <a href="{% url 'business-side:services_haccp' %}" class="link-thumbnail">
+            <h3>HACCP System Consultancy</h3>
+            <span class="ion-plus icon"></span>
+            <img src="{% static 'images/f_haccp.jpg' %}" alt="Image" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 element-animate">
+          <a href="{% url 'business-side:services_iso22000' %}" class="link-thumbnail">
+            <h3>ISO22000 Food Safety Management System Consultancy</h3>
+            <span class="ion-plus icon"></span>
+            <img src="{% static 'images/f_iso22000.jpg' %}" alt="Image" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 element-animate">
+          <a href="{% url 'business-side:services_iso9001' %}" class="link-thumbnail">
+            <h3>ISO 9001 Quality Management System Consultancy</h3>
+            <span class="ion-plus icon"></span>
+            <img src="{% static 'images/f_iso9001.jpg' %}" alt="Image" class="img-fluid">
+          </a>
+        </div> 
+      </div>
+      
+    </div>
+  </section>
+{% endblock index_body %}

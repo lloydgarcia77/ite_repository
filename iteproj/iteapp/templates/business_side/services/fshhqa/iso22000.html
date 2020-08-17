@@ -1,0 +1,114 @@
+{% extends 'business_side/index.html' %}
+{% load staticfiles %}
+{% load humanize %}
+{% block title %}
+KGS-BVDR &mdash; ISO 22000 Food Safety Management System Consultancy
+{% endblock title%}
+
+
+{% block home %}
+<li class="nav-item">
+    <a class="nav-link " href="{% url 'index' %}">Home</a>
+</li>
+{% endblock home %}
+
+
+{% block services %}
+active
+{% endblock services %}
+
+
+{% block index_body %}
+
+
+<section class="home-slider inner-page owl-carousel">
+    <div class="slider-item" style="background-image: url({% static 'images/food-safety-management-system-wallpaper.png' %});">
+
+        <div class="container">
+            <div class="row slider-text align-items-center justify-content-center">
+                <div class="col-md-8 text-center col-sm-12 element-animate">
+                    <h1> ISO22000 Food Safety Management System Consultancy</h1>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="col-md-8 mb-5">
+          <p>ISO 22000 is an internationally recognized standard that combines the ISO 9001 approach to food safety management and HACCP for the assurance of food safety at all levels. The standard maps out how an organisation can demonstrate its ability to control safety hazards to ensure that food is safe.</p>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center">
+        <p><img src="{% static 'images/iso22000_image.png' %}" alt="Image" class="img-fluid"></p>
+        <div class="col-md-8 mb-5">
+          <h2>&ldquo;Benefits&rdquo;</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8"> 
+            <ol>
+                <li> <p>Minimizes the experience of low-quality and health risk foods.</p></li>
+                <li> <p>Increases trust by the public, industry and the public sector.</p></li>
+                <li> <p>Increase the profits.</p></li>
+                <li> <p>Control and eliminate food safety risks.</p></li>
+                <li> <p>Continually improve the processes needed to provide food safe.</p></li>
+                <li> <p>Built clients confidence on your ability to control any food safety hazards.</p></li>
+                <li> <p>Ensure sustainable food safety.</p></li>
+                <li> <p>Promote international trade.</p></li>
+            </ol> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section border-t pb-0" id="fshhqa">
+    <div class="container">
+      <div class="row justify-content-center mb-5 element-animate">
+        <div class="col-md-8 text-center">
+          <h2 class=" heading mb-4">Check Our Awesome Services</h2>
+          <p class="mb-5 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" style="margin-bottom: 5%;">
+      <div class="row no-gutters">
+      
+        <div class="col-md-4 element-animate">
+            <a href="{% url 'business-side:services_haccp' %}" class="link-thumbnail">
+              <h3>HACCP System Consultancy</h3>
+              <span class="ion-plus icon"></span>
+              <img src="{% static 'images/f_haccp.jpg' %}" alt="Image" class="img-fluid">
+            </a>
+          </div>
+       
+          <div class="col-md-4 element-animate">
+            <a href="{% url 'business-side:services_iso9001' %}" class="link-thumbnail">
+              <h3>ISO 9001 Quality Management System Consultancy</h3>
+              <span class="ion-plus icon"></span>
+              <img src="{% static 'images/f_iso9001.jpg' %}" alt="Image" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-md-4 element-animate">
+              <a href="{% url 'business-side:services_haccp_trainings' %}" class="link-thumbnail">
+                <h3>HACCP Trainings</h3>
+                <span class="ion-plus icon"></span>
+                <img src="{% static 'images/f_haccp_trainings.jpg' %}" alt="Image" class="img-fluid">
+              </a>
+          </div>
+    
+      </div>
+      
+    </div>
+  </section>
+
+
+{% endblock index_body %}

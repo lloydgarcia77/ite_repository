@@ -135,6 +135,19 @@ def services_haccp(request):
     template_name = "business_side/services/fshhqa/haccp.html" 
     return render(request, template_name)
 
+def services_iso22000(request):
+    template_name = "business_side/services/fshhqa/iso22000.html" 
+    return render(request, template_name)
+
+def services_iso9001(request):
+    template_name = "business_side/services/fshhqa/iso9001.html" 
+    return render(request, template_name)
+
+def services_haccp_trainings(request):
+    template_name = "business_side/services/fshhqa/haccp_trainings.html" 
+    return render(request, template_name)
+
+
 
 
 

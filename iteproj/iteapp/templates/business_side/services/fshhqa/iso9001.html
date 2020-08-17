@@ -1,0 +1,257 @@
+{% extends 'business_side/index.html' %}
+{% load staticfiles %}
+{% load humanize %}
+{% block title %}
+KGS-BVDR &mdash; ISO 9001 Quality Management System Consultancy
+{% endblock title%}
+
+{% block custom_css %}
+<style>
+    ul.square {
+        list-style-type: square;
+    }
+</style>
+{% endblock custom_css %}
+
+
+{% block home %}
+<li class="nav-item">
+    <a class="nav-link " href="{% url 'index' %}">Home</a>
+</li>
+{% endblock home %}
+
+
+{% block services %}
+active
+{% endblock services %}
+
+
+{% block index_body %}
+
+<section class="home-slider inner-page owl-carousel">
+    <div class="slider-item" style="background-image: url({% static 'images/iso9001_wallpaper2.jpg' %});">
+
+        <div class="container">
+            <div class="row slider-text align-items-center justify-content-center">
+                <div class="col-md-8 text-center col-sm-12 element-animate">
+                    <h1> ISO 9001 Quality Management System Consultancy</h1>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="section">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 mb-5">
+                <p>ISO 9001 is defined as the international standard that specifies requirements for a quality
+                    management system (QMS). Organizations use the standard to demonstrate the ability to consistently
+                    provide products and services that meet customer and regulatory requirements.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-8 mb-5">
+                <p><img src="{% static 'images/iso9001_benefits.png' %}" alt="Image" class="img-fluid"></p>
+                <h2>&ldquo;Benefits&rdquo;</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <ol>
+                    <li>
+                        <p>Suitable for both small and large organisations.</p>
+                    </li>
+                    <li>
+                        <p>Better internal management.</p>
+                    </li>
+                    <li>
+                        <p>Increase in efficiency, productivity and profit.</p>
+                    </li>
+                    <li>
+                        <p>Improved customer retention and acquisition.</p>
+                    </li>
+                    <li>
+                        <p>Consistent outcomes, measured and monitored.</p>
+                    </li>
+                    <li>
+                        <p>Globally recognized standard.</p>
+                    </li>
+                    <li>
+                        <p>Compatible with other ISO standards.</p>
+                    </li>
+                </ol>
+                <p><img src="{% static 'images/iso9001_wallpaper.png' %}" alt="Image" class="img-fluid"></p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-8 mb-5">
+                <h2>SERVICES OFFERED:</h2>
+
+                <ul>
+                    <li>
+                        <h4>Gap Assessment</h4>
+                    </li>
+                    <p>We will conduct a review of your current management system practices, controls and documentation,
+                        to determine the extent to which you conform to those required by the specific HACCP, ISO, TS or
+                        other standard. An audit report will be presented with our findings and recommendations.</p>
+                    <li>
+                        <h4>Project Planning and Organization</h4>
+                        <p>We work with senior management or the implementation team to:</p>
+                        <ul class="square">
+                            <li>
+                                <p>Review the findings and recommendations of the Consultant’s Gap Assessment.</p>
+                            </li>
+                            <li>
+                                <p>Identify, plan and schedule system development and implementation activities.</p>
+                            </li>
+                            <li>
+                                <p>Identify and plan resource requirements for the project.</p>
+                            </li>
+                            <li>
+                                <p>Approve the proposed implementation plan and schedule.</p>
+                            </li>
+                            <li>
+                                <p>Agree on the scope of consulting to be provided.</p>
+                            </li>
+                            <li>
+                                <p>Process Identification and Documentation.</p>
+                            </li>
+                        </ul>
+                        <p>We help you identify and effectively document all organizational processes relevant to your
+                            management system. These include customer-oriented, management, product realization,
+                            resource planning, measurement, support and outsourced processes. </p>
+                    </li>
+                    <li>
+                        <h4>System Development and Implementation</h4>
+                        <p>We work with your implementation team and process personnel to:</p>
+                        <ul class="square">
+                            <li>
+                                <p>Develop and implement adequate controls and documentation for effective planning
+                                    operation and control of all management system processes.</p>
+                            </li>
+                            <li>
+                                <p>Create management system awareness at all levels within your organization.</p>
+                            </li>
+                            <li>
+                                <p>Ensure methods for interaction and communication between processes are defined,
+                                    understood and effective.</p>
+                            </li>
+                            <li>
+                                <p>Establish and track appropriate performance objectives for key processes. We provide
+                                    guidance on achieving these objectives.</p>
+                            </li>
+                            <li>
+                                <p>Ensure appropriate records are maintained for all processes.</p>
+                            </li>
+                            <li>
+                                <p>We use proven tools and techniques to help you develop a management system that can
+                                    be certified in the shortest possible time as well as contribute to your bottom line
+                                    in improved operational performance.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Management System Documentation</h4>
+                        <p>We help you develop and in many instances provide hands-on assistance in preparing your
+                            haccp, quality or food safety manual, procedures, work instructions, forms, checklists and
+                            other operational documents. We will work closely with your personnel in this activity as it
+                            is important that they understand, use and take ownership for these documents and
+                            implementation.</p>
+                    </li>
+                    <li>
+                        <h4>Documentation Review</h4>
+                        <p>If you have completed your documentation and need an expert review before you submit it to
+                            your Certification Body (CB), we provide this service as well. We make sure that all your
+                            documents conform to requirements.</p>
+                    </li>
+                    <li>
+                        <h4>Pre-Assessment</h4>
+                        <ul class="square">
+                            <li>
+                                <p>Once the management system has been fully implemented and sufficient records exist to
+                                    demonstrate effective performance, we will conduct a pre-assessment audit to
+                                    determine whether your management system is ready for a formal audit by an
+                                    accredited Certification Body.</p>
+                            </li>
+                            <li>
+                                <p>We will present an Audit Report and work with your staff to determine appropriate
+                                    corrective action for any non-conformance found.</p>
+                            </li>
+                            <li>
+                                <p>At this time we will also make your employees familiar with the certification audit
+                                    process and provide guidance on handling external audit interviews.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Support during the Certification Audit Process</h4>
+                        <p>Early in the implementation schedule we will help you select an appropriate Certification
+                            Body. During the certification audit, we can arrange to be on site to provide guidance in
+                            addressing any issues or corrective action required by the external auditor. We guarantee
+                            customer satisfaction and we will work with you until your organization is successfully
+                            certified.</p>
+                    </li>
+                    <li>
+                        <h4>Continual Improvement Process</h4>
+                        <p>Your management system must be a dynamic process to continually improve the effectiveness and efficiency of your organization. We can train your employees in problem-solving skills and techniques to keep this process robust and focused to ensure value-added measurable results and continuity of certification. </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section border-t pb-0" id="fshhqa">
+    <div class="container">
+      <div class="row justify-content-center mb-5 element-animate">
+        <div class="col-md-8 text-center">
+          <h2 class=" heading mb-4">Check Our Awesome Services</h2>
+          <p class="mb-5 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" style="margin-bottom: 5%;">
+      <div class="row no-gutters">
+        <div class="col-md-4 element-animate">
+          <a href="{% url 'business-side:services_haccp' %}" class="link-thumbnail">
+            <h3>HACCP System Consultancy</h3>
+            <span class="ion-plus icon"></span>
+            <img src="{% static 'images/f_haccp.jpg' %}" alt="Image" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-md-4 element-animate">
+          <a href="{% url 'business-side:services_iso22000' %}" class="link-thumbnail">
+            <h3>ISO22000 Food Safety Management System Consultancy</h3>
+            <span class="ion-plus icon"></span>
+            <img src="{% static 'images/f_iso22000.jpg' %}" alt="Image" class="img-fluid">
+          </a>
+        </div>
+      
+        <div class="col-md-4 element-animate">
+            <a href="{% url 'business-side:services_haccp_trainings' %}" class="link-thumbnail">
+              <h3>HACCP Trainings</h3>
+              <span class="ion-plus icon"></span>
+              <img src="{% static 'images/f_haccp_trainings.jpg' %}" alt="Image" class="img-fluid">
+            </a>
+        </div>
+    
+      </div>
+      
+    </div>
+  </section>
+
+{% endblock index_body %}
