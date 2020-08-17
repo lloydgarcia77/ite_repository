@@ -2,20 +2,9 @@
 {% load staticfiles %}
 {% load humanize %}
 {% block title %}
-KGS-BVDR &mdash; Food Safety, Health Hygiene and Quality Assurance Service
+KGS-BVDR &mdash; HACCP System Consultancy
 {% endblock title%}
 
-{% block custom_css %}
-<style>
-h1 {
-    margin-top: 15%;
-    
-}
-.slider-item { 
-    min-height: 750px !important;
-}
-</style>
-{% endblock custom_css %}
 
 {% block home %}
 <li class="nav-item">
@@ -32,15 +21,13 @@ active
 {% block index_body %}
 
 <section class="home-slider inner-page owl-carousel">
-    <div class="slider-item" style="background-image: url({% static 'images/fs-slider1.jpg' %});">
+    <div class="slider-item" style="background-image: url({% static 'images/haccp_consultancy.jpg' %});">
 
         <div class="container">
             <div class="row slider-text align-items-center justify-content-center">
                 <div class="col-md-8 text-center col-sm-12 element-animate">
-                    <h1>Food Safety, Health Hygiene and Quality Assurance</h1>
-                    <p class="mb-5 sub-text">
-                        The food industry is under great pressure to produce safe and quality food and beverage products. To ensure that these products are prepared, served without any contamination and safe for consumption, these industries have to effectively implement food safety standards, rules, and regulations at the same time maintaining business competency and consumer trust by acquiring international food safety certification.</p>
-                    <p><a href="#fshhqa" class="btn btn-white btn-outline-white px-4 py-3">Explore</a></p>
+                    <h1> HACCP System Consultancy</h1>
+                    
                 </div>
             </div>
         </div>
@@ -48,7 +35,38 @@ active
     </div>
 </section>
 
-<section class="section border-t pb-0" id="fshhqa">
+<section class="section">
+    <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="col-md-8 mb-5">
+          <p>A HACCP System requires that potential hazards are identified and controlled at specific points in the process. This includes biological, chemical or physical hazards. Any organization involved in the manufacturing, processing or handling of food products can use HACCP to minimize or eliminate food safety hazards.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8 mb-5">
+          <h2>&ldquo;Benefits&rdquo;</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+            <ol>
+                <li> <p>Increased confidence in your products.</p></li>
+                <li> <p>Ability to reach markets and customers that require a HACCP based system.</p></li>
+                <li> <p>Reduced Liability.</p></li>
+                <li> <p>Effective process management.</p></li>
+                <li> <p>Improved quality and consistency.</p></li>
+            </ol>
+
+          
+          <p><img src="{% static 'images/haccp_logo.jpg' %}" alt="Image" class="img-fluid"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section border-t pb-0" id="fshhqa">
     <div class="container">
       <div class="row justify-content-center mb-5 element-animate">
         <div class="col-md-8 text-center">
@@ -59,28 +77,22 @@ active
     </div>
     <div class="container-fluid" style="margin-bottom: 5%;">
       <div class="row no-gutters">
-        <div class="col-md-3 element-animate">
-          <a href="{% url 'business-side:services_haccp' %}" class="link-thumbnail">
-            <h3>HACCP System Consultancy</h3>
-            <span class="ion-plus icon"></span>
-            <img src="{% static 'images/f_haccp.jpg' %}" alt="Image" class="img-fluid">
-          </a>
-        </div>
-        <div class="col-md-3 element-animate">
+      
+        <div class="col-md-4 element-animate">
           <a href="project-single.html" class="link-thumbnail">
             <h3>ISO22000 Food Safety Management System Consultancy</h3>
             <span class="ion-plus icon"></span>
             <img src="{% static 'images/f_iso22000.jpg' %}" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-md-3 element-animate">
+        <div class="col-md-4 element-animate">
           <a href="project-single.html" class="link-thumbnail">
             <h3>ISO 9001 Quality Management System Consultancy</h3>
             <span class="ion-plus icon"></span>
             <img src="{% static 'images/f_iso9001.jpg' %}" alt="Image" class="img-fluid">
           </a>
         </div>
-        <div class="col-md-3 element-animate">
+        <div class="col-md-4 element-animate">
             <a href="project-single.html" class="link-thumbnail">
               <h3>HACCP Trainings</h3>
               <span class="ion-plus icon"></span>

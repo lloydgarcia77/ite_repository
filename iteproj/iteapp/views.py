@@ -131,6 +131,12 @@ def services_fshhqa(request):
     return render(request, template_name)
 
 
+def services_haccp(request):
+    template_name = "business_side/services/fshhqa/haccp.html" 
+    return render(request, template_name)
+
+
+
 
     
 

@@ -16,4 +16,6 @@ urlpatterns = [
     path('services/structured-cabling-for-network-and-telephone-system', views.services_structured_cabling_for_network_and_telephone_system, name="services_structured_cabling_for_network_and_telephone_system"),
     path('services/cctv-system', views.services_cctv_system, name="services_cctv_system"),
     path('services/food-safety-health-hygiene-quality-assurance', views.services_fshhqa, name="services_fshhqa"),
+    path('services/food-safety-health-hygiene-quality-assurance/haccp-consultancy', views.services_haccp, name="services_haccp"),
+    
 ]
