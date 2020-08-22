@@ -24,3 +24,9 @@ qweQWE123!
 python anywhere
 kgsbvdrems123/kgsbvdrems123@gmail.com
 qweQWE123!
+
+https://www.pythonanywhere.com/forums/topic/1251/
+The path 3.7 (from --python=3.7) does not exist
+mkvirtualenv --python=/usr/bin/python3.7 iteprojenv
+
+mkvirtualenv --python=3.7.4 iteprojenv
